@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/base.js"></script>
+  <meta name="theme-color" content="#000000">
+
+  <title>Форма 450</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body class="dark">
+
+<form id="dataForm">
+  <div class="form-wrapper">
+    <div class="form-container">
+      <div class="page-header">
+        <span class="page-header__spacer" aria-hidden="true"></span>
+        <h2>Форма 450</h2>
+        <button type="button" class="theme-btn theme-toggle" id="themeBtn" aria-label="Theme">🌙</button>
+      </div>
+      <h3>Позиція</h3>
+      <input type="text" name="position" id="position" required>
+      <h3>Звання / Прізвище</h3>
+      <div class="row">
+        <input type="text" name="rank" id="rank" placeholder="Звання">
+        <input type="text" name="surname" id="surname" placeholder="Прізвище">
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3>
+        <input type="checkbox" id="toggle5">
+        <span class="checkbox-label">Готовнicть</span>
+      </h3>
+      <div id="section5" class="section-content">
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" name="status" value="Зброя та особовий склад 4.5.0">
+            Зброя та особовий склад 4.5.0
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="status" value="Готовнicть 1 виконано">
+            Готовнicть 1 виконано
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="status" value="Готовнicть 2 виконано">
+            Готовнicть 2 виконано
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="status" value="Готовнicть 2/3 виконано">
+            Готовнicть 2/3 виконано
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="status" value="Готовнicть 3 виконано">
+            Готовнicть 3 виконано
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3>
+        <input type="checkbox" id="toggle6">
+        <span class="checkbox-label">Хмарнiсть</span>
+      </h3>
+      <div id="section6" class="section-content">
+        <div class="slider-value-row">
+          <span class="slider-value-inline">Хмарнiсть: <span id="cloudValue">5</span></span>
+        </div>
+        <input type="range" name="cloudiness" min="1" max="10" value="5" id="cloudSlider">
+        <input type="text" name="height" placeholder="Висота">
+        <input type="text" name="visibility" placeholder="Видимість">
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3>
+        <input type="checkbox" id="toggle4">
+        <span class="checkbox-label">Повiдомлення</span>
+      </h3>
+      <div id="section4" class="section-content">
+        <textarea name="message"></textarea>
+        <div class="attachment-row">
+          <input type="file" id="attachmentInput" name="attachments" accept="image/*,.pdf,.doc,.docx" multiple hidden>
+          <button type="button" class="attachment-btn" id="attachmentBtn">Додати файл</button>
+          <div class="attachment-list" id="attachmentList"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <button type="button" id="resultBtn">Результат</button>
+      <button type="button" id="shareBtn">Вiдправити</button>
+      <button type="button" class="secondary" id="copyBtn">Скопiювати</button>
+    </div>
+  </div>
+</form>
+
+<div id="previewModal" class="preview-modal" aria-hidden="true">
+  <div class="preview-modal-box">
+    <h3 class="preview-modal-title">Результат</h3>
+    <div class="preview-modal-content" id="previewModalContent"></div>
+    <div class="preview-modal-images" id="previewModalImages"></div>
+    <button type="button" class="preview-modal-close" id="previewModalClose">Закрити</button>
+  </div>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/form.js"></script>
+
+</body>
+</html>
