@@ -1,0 +1,63 @@
+body.dark {
+  background: #111;
+  color: white;
+  color-scheme: dark;
+}
+
+body.dark .form-container {
+  background: #1e1e1e;
+}
+
+body.dark h3 {
+  color: #aaa;
+}
+
+body.dark input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #0066cc 0%, #0066cc var(--range-pct, 50%), #444 var(--range-pct, 50%), #444 100%);
+}
+
+body.dark input[type="range"]::-moz-range-track {
+  background: linear-gradient(to right, #0066cc 0%, #0066cc var(--range-pct, 50%), #444 var(--range-pct, 50%), #444 100%);
+}
+
+body.dark input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+body.dark textarea {
+  background: #2a2a2a;
+  border-color: #333;
+  color: white;
+}
+
+body.dark .slider-value-inline {
+  color: #aaa;
+}
+
+body.dark .attachment-btn {
+  background: #777;
+  color: white;
+}
+
+body.dark .attachment-btn:hover {
+  background: #666;
+}
+
+body.dark .attachment-list {
+  color: #999;
+}
+
+body.dark .preview-modal-box {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark .preview-modal-title {
+  color: #eee;
+}
+
+body.dark .preview-modal-content {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+body.dark .preview-modal-images {
+  border-top-color: #444;
+}
