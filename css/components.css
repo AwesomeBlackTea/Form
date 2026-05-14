@@ -10,9 +10,9 @@ textarea {
   margin-top: 6px;
   padding: 12px;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #b8bec8;
   font-size: 16px;
-  background: #fafafa;
+  background: #fff;
 }
 
 input[type="checkbox"],
@@ -214,6 +214,7 @@ button.secondary {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  border: 1px solid #d0d4db;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 

@@ -6,6 +6,7 @@ body.dark {
 
 body.dark .form-container {
   background: #1e1e1e;
+  border-color: #333;
 }
 
 body.dark h3 {
@@ -47,6 +48,7 @@ body.dark .attachment-list {
 body.dark .preview-modal-box {
   background: #1e1e1e;
   color: white;
+  border-color: #444;
 }
 
 body.dark .preview-modal-title {
